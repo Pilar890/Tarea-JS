@@ -1,0 +1,202 @@
+*{
+    color: white;
+}
+
+.logo{
+    max-width: 10rem;
+}
+.section-1{
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    
+}
+.sec2{
+    width: 25rem;
+    height: 28rem;
+    padding: 3rem;
+    background-color: rgba(26, 161, 223, 0.371);
+    border-radius: 0.8rem;
+}
+.price{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+h5{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+
+}
+.txt{
+    display: flex;
+    text-align: center;
+}
+
+.price a{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    border: 1px solid white;
+    padding: 0.8rem;
+    border-radius: 0.3rem;
+
+}
+
+.cont-padre{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+    width: 100%;
+    
+}
+
+.cards img{
+    height: 12rem;
+    width: 17rem;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.sec2{
+    margin: 2rem;
+}
+main, header{
+    background-color: rgba(0, 0, 0, 0.926);
+} 
+
+.section-1{
+    background-color: rgba(26, 161, 223, 0.371);
+}
+
+.img-card-cont{
+    
+    display: flex;
+    justify-content: center;
+}
+
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: rgba(19, 38, 47, 0.949);
+}
+.navbar1{
+    background-color: rgba(26, 161, 223, 0.371);
+}
+
+.cont-details-{
+    padding: 10rem;
+
+    
+}
+.sec-details{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding: 3rem;
+    border: 1px solid white;
+   
+}
+.txt-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    padding: 2rem;
+
+}
+.img-details{
+    max-width: 40rem;
+    border-radius: 1rem;
+}
+.cont-img-details{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+@media (max-width:940px){
+    .form-check-label{
+        font-size: 10px;
+    }
+    h1{
+        font-size: 25px;
+    }
+    
+
+} 
+@media (min-width:375px) and (max-width:1023px){
+    .logo{
+        max-width: 8rem;
+    }
+    .sec2{
+        width: 20rem;
+        padding: 2rem;
+        height: 26rem;
+        margin: 1.5rem;
+    }
+    .cards img{
+        height: 10rem;
+        width: 14rem;
+    }
+    h5{
+        font-size: 10px;
+        text-align: center;
+    }
+    .sec-details{
+        flex-direction: column;
+    }
+    
+    
+    .txt-details{
+        text-align: center;
+    }
+    .cont-details-{
+        padding: 2rem;
+    }
+    
+
+    
+    
+
+}
+@media (min-width:375px) and (max-width:767px){
+    
+    .img-details{
+        width: 15rem;
+    }
+
+} 
+@media (min-width:768px) and (max-width:1024px){
+    .img-details{
+        width: 25rem;
+    }
+    .cont-details-{
+        padding: 10rem;
+    }
+}
+@media (min-width:1024px) and (max-width:1439px){
+    .img-details{
+        width: 25rem;
+    }
+    .cont-details-{
+        padding: 10rem;
+    }
+
+}
