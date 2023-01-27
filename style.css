@@ -85,9 +85,9 @@ main, header{
 
 footer{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    padding: 2rem;
+    padding: 1rem;
     background-color: rgba(19, 38, 47, 0.949);
 }
 .navbar1{
@@ -117,7 +117,7 @@ footer{
 
 }
 .img-details{
-    max-width: 40rem;
+    max-width: 30rem;
     border-radius: 1rem;
 }
 .cont-img-details{
@@ -125,8 +125,45 @@ footer{
     justify-content: center;
 }
 
+.txt-details2{
+    text-align: center;
+}
+.form{
+   
+    width: 45rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 
+}
+.cont-form{
+    
+    display: flex;
+    justify-content: center;
+    padding: 10rem;
+}
 
+td{
+    height: 2rem;
+}
+.tablas{
+    width: 70%;
+}
+th{
+    color: black;
+    font-size: 20px;
+    padding: 1rem;
+}
+.cont-table{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+.redes{
+    width: 4rem;
+    margin: 0.5rem;
+}
 
 
 
@@ -172,15 +209,25 @@ footer{
     }
     
 
-    
-    
-
 }
 @media (min-width:375px) and (max-width:767px){
     
+    h1{
+        font-size: 15px;
+    }
     .img-details{
         width: 15rem;
     }
+    .cont-form{
+        padding: 2rem;
+    } 
+    .cont-table{
+        padding: 0rem;
+    }
+    .redes{
+        padding: 0.5rem;
+    }
+    
 
 } 
 @media (min-width:768px) and (max-width:1024px){
@@ -190,6 +237,9 @@ footer{
     .cont-details-{
         padding: 10rem;
     }
+    .cont-form{
+        padding: 4rem;
+    } 
 }
 @media (min-width:1024px) and (max-width:1439px){
     .img-details{
