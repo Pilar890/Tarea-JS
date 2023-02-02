@@ -15,8 +15,8 @@
     
 }
 .sec2{
-    width: 25rem;
-    height: 28rem;
+    width: 20rem;
+    height: 30rem;
     padding: 3rem;
     background-color: rgba(26, 161, 223, 0.371);
     
@@ -61,7 +61,7 @@ h5{
     height: 12rem;
     width: 17rem;
     object-fit: cover;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
 }
 
 .sec2{
@@ -87,7 +87,7 @@ footer{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 1rem;
+    padding: 0.5rem;
     background-color: rgba(19, 38, 47, 0.949);
 }
 .navbar1{
@@ -161,7 +161,7 @@ th{
     padding: 2rem;
 }
 .redes{
-    width: 4rem;
+    width: 3rem;
     margin: 0.5rem;
 }
 
