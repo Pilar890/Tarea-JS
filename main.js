@@ -11,28 +11,37 @@ function createCard(infooEvent) {
       <p class="txt">${infooEvent.description}</p>
       <div class="price">
           <p>Price $${infooEvent.price}</p>
-          <a href="./details.html">Details</a>
+          <a href="./details.html?id=${infooEvent._id}&name=${infooEvent.name}">Details</a>
       </div>
   </div>
  </section>`;
 }
-let newBoxCards = "";
-for (let infooEvent of infoEvent) {
-  newBoxCards += createCard(infooEvent);
+function viewNotFound(word) {
+  return `<div class = 'div-search' >${word} EVENT NOT FOUND</div>`;
 }
-cards.innerHTML = newBoxCards;
+function filterAll(array) {
+  let newBoxCards = "";
+  for (let infooEvent of array) {
+    newBoxCards += createCard(infooEvent);
+  }
+  cards.innerHTML = newBoxCards;
+}
+filterAll(infoEvent);
+
 // ----- search
+
 const updateSearch = (event) => {
   const word = event.target.value;
   const filteredEvents = infoEvent.filter((event) => {
     return event.name.toLowerCase().includes(word.toLowerCase());
   });
+  let fil = updateCategory(filteredEvents);
 
   let newBoxCards = "";
-  for (let infooEvent of filteredEvents) {
+  for (let infooEvent of fil) {
     newBoxCards += createCard(infooEvent);
   }
-  cards.innerHTML = newBoxCards;
+  cards.innerHTML = newBoxCards || viewNotFound(word.toUpperCase());
 };
 const $searchInput = document.querySelector("#search_input");
 
@@ -56,6 +65,7 @@ function createCheck(lista, elementos) {
   checkbox.innerHTML = categoryBox;
 }
 createCheck(category, checkbox);
+
 //evento
 
 function updateCategory(e) {
@@ -65,38 +75,10 @@ function updateCategory(e) {
   if (valor.length === 0) {
     return e;
   }
-  return e.filter((filtrados) => valor.includes(filtrados.category));
+  return e.filter((filtered) => valor.includes(filtered.category));
 }
 
 checkbox.addEventListener("change", () => {
   let filteredCategory = updateCategory(infoEvent);
-  let newBoxCards = "";
-  for (let infooEvent of filteredCategory) {
-    newBoxCards += createCard(infooEvent);
-  }
-  cards.innerHTML = newBoxCards;
+  filterAll(filteredCategory);
 });
-
-// function filterCategory (eventos, value){
-//     const updateCategory = (event) => {
-//         const valor = event.target.value
-//         console.log(valor)
-//         if(valor == 'Food Fair'){
-//             return category[0]
-
-//         }else if(valor == 'Museum'){
-//             console.log(category[1])
-//         }
-
-//     }
-// }
-
-// let newBoxCards = "";
-// for (let infooEvent of ) {
-//   newBoxCards += createCard(infooEvent)
-// }
-// cards.innerHTML = newBoxCards
-
-// function filterCategory(category, value){
-
-// }
