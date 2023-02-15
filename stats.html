@@ -1,154 +1,174 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stats</title>
-    <link rel="stylesheet" href="./style.css">
+     
     <link rel="shortcut icon" href="./assets/logoA.png" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar1">
-          <div class="container-fluid">
-            <img class="logo mx-5" src="./assets/Logo Amazing Events.png" alt="logo">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mx-5">
-                <li class="nav-item">
-                  <a class="nav-link active p-3 text-light" aria-current="page" href="./index.html">HOME</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active p-3 text-light" aria-current="page" href="./upcoming-events.html">UPCOMING EVENTS</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active p-3 text-light" aria-current="page" href="./past-events.html">PAST EVENTS</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active p-3 text-light" aria-current="page" href="./contact.html">CONTACT</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active p-3 text-light" aria-current="page" href="#">STATS</a>
-                </li>
-              </ul>
-            </div>
+    <header style="background-color: rgba(0, 0, 0, 0.926);">
+      <nav class="navbar navbar-expand-lg" style="background-color: rgba(26, 161, 223, 0.371) ;">
+        <div class="container-fluid">
+          <div class="container">
+            <a class="navbar-brand" href="../index.html">
+              <img
+                style="width: 10rem"
+                src="./assets/Logo Amazing Events.png"
+                alt="logo"
+              />
+            </a>
           </div>
-        </nav>
-        <section class="p-4">
-          <h1 class="d-flex justify-content-center">STATS</h1>
-        </section>
-      </header>
-      <main>
-        <div class="cont-table">
-             <div class="tablas">
-                 <table class="table table table1 table-success table-striped">
-                    <thead>
-                      <tr class="border">
-                        <th colspan="3" scope="col">Events statistics</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr class="border table-active">
-                        <td>Events with the highest percentage of attendance</td>
-                        <td>Events with the lowest percentage of attendance</td>
-                        <td>Events with larger capacity</td>
-                      </tr>
-                      <tr class="border table-active">
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                      </tr>
-                    </tbody>
-                  </table>
-
-                  <table class="table table table1 table-success table-striped">
-                     <thead>
-                        <tr class="border">
-                          <th colspan="3" scope="col">Upcoming events statiscs by category</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr class="border table-active">
-                          <td>Categories</td>
-                          <td>Revenues</td>
-                          <td>Percentage of attendance</td>
-                        </tr>
-                        <tr class="border table-active">
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                        </tr>
-                        <tr class="border table-active">
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                        </tr>
-                        <tr class="border table-active">
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                        </tr>
-                      </tbody>
-                    </table>
-
-                    <table class="table table table1 table-success table-striped">
-                      <thead>
-                        <tr class="border">
-                          <th colspan="3" scope="col">Past Events statistic by category</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr class="border table-active">
-                          <td>Categories</td>
-                          <td>Revenues</td>
-                          <td>Percentage of attendance</td>
-                        </tr>
-                        <tr class="border table-active">
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                        </tr>
-                        <tr class="border table-active">
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                        </tr>
-                        <tr class="border table-active">
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                        </tr>
-                        <tr class="border table-active">
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                        </tr>
-                        <tr class="border table-active">
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                        </tr>
-                      </tbody>
-                  </table>
-            </div>
-
+          <a class="navbar-brand" href="#"></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse m-1" id="navbarNav">
+            <ul class="navbar-nav dis">
+              <li class="nav-item m-1">
+                <a
+                  class="nav-link text-white fs-5 rounded-2"
+                  aria-current="page"
+                  href="../index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item m-1">
+                <a
+                  class="nav-link text-white fs-5 rounded-2"
+                  href="./upcoming-events.html"
+                  >UpcomingEvents</a
+                >
+              </li>
+              <li class="nav-item m-1">
+                <a
+                  class="nav-link text-white fs-5 rounded-2"
+                  href="./past-events.html"
+                  >PastEvents</a
+                >
+              </li>
+              <li class="nav-item m-1">
+                <a
+                  class="nav-link text-white fs-5 rounded-2"
+                  href="./contact.html"
+                  >Contact</a
+                >
+              </li>
+              <li class="nav-item m-1">
+                <a
+                  class="nav-link text-white fs-5 rounded-2"
+                  href="#"
+                  >Stats</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-  
-      </main>
+      </nav>
+      <div class="d-flex justify-content-center p-4" style="background-color: rgba(0, 0, 0, 0.926);">
+        <h1 class="text-white fs-1">STATS</h1>
+      </div>
+    </header>
+    <main class=" height: 75vh" style="padding-bottom: 100px ; background-color: rgba(0, 0, 0, 0.926);">
+      <div class=" tabled-flex justify-content-center m-auto pt-2"
+      style="width: 70%;"">
+        <table class="table table-bordered m-3  bg-white text-center">
+            <thead>
+                <tr class="title fs-4">
+                    <th colspan="3">Event statistics</th>
+                </tr>
+                <tr>
+                    <th>Events with the highest percentage of attendance</th>
+                    <th>Events with the lowest percentage of attendance</th>
+                    <th>Event with larger capacity</th>
+                </tr>
+            </thead>
+            <tbody id="event-statistics">
 
-      <footer>
-        <div>
-          <img class="redes" src="./assets/1161953_instagram_icon.png" alt="instagram">
-          <img class="redes" src="./assets/5305154_fb_facebook_facebook logo_icon.png" alt="facebook">
-          <img class="redes" src="./assets/843786_whatsapp_icon.png" alt="whatsapp">
-        </div>
-        <h4>Cohort 42</h4>
-      </footer>
+            </tbody>
+        </table>
+        <table class="table table-bordered  m-3 bg-white text-center">
+            <thead>
+                <tr class="title fs-4">
+                    <th colspan="3">Upcoming events statistics by category</th>
+                </tr>
+                <tr>
+                    <th class="fs-5">Category</th>
+                    <th class="fs-5">Revenues</th>
+                    <th class="fs-5">Percentage of attendance</th>
+                </tr>
+            </thead>
+            <tbody id="upcoming-statistics">
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+            </tbody>
+        </table>
+        <table class="table table-bordered  m-3 bg-white text-center">
+            <thead>
+                <tr class="title fs-4">
+                    <th colspan="3">Past events statistic by category</th>
+                </tr>
+                <tr>
+                    <th class="fs-5">Category</th>
+                    <th class="fs-5">Revenues</th>
+                    <th class="fs-5">Percentage of attendance</th>
+                </tr>
+            </thead>
+            <tbody id="past-statistics">
+              
+            </tbody>
+        </table>
+    </div>
+  </main>
+    <footer
+      class="d-flex justify-content-between align-items-center p-0 " style="min-height: 10vh; padding-top: 100px; background-color:rgba(19, 38, 47, 0.949); "
+    >
+      <div style="margin-left: 25rem;">
+        <a class="p-3" href="https://www.instagram.com/"
+          ><img
+            style="height: 3rem; width: 3rem"
+            src="./assets/1161953_instagram_icon.png"
+            alt="instragram"
+        /></a>
+        <a class="p-3" href="https://www.facebook.com/"
+          ><img
+            style="height: 3rem; width: 3rem"
+            src="./assets/5305154_fb_facebook_facebook logo_icon.png"
+            alt="instragram"
+        /></a>
+        <a class="p-3" href="https://web.whatsapp.com/"
+          ><img
+            style="height: 3rem; width: 3rem"
+            src="./assets/843786_whatsapp_icon.png"
+            alt="instragram"
+        /></a>
+      </div>
+      <div>
+        <p class="text-white fs-4" style="margin-right: 25rem ;">Cohort 42</p>
+      </div>
+    </footer>
+    <script type="module" src="./stats.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
+
