@@ -112,7 +112,7 @@ export function creatDetails(elemento, objeto) {
 
 // function stats
 
-export function cardsFilterPast(events, pastDate) {
+export function cardsPast(events, pastDate) {
   let pastEvents = [];
   for (let event of events) {
     if (pastDate > event.date) {
@@ -122,7 +122,7 @@ export function cardsFilterPast(events, pastDate) {
   return pastEvents;
 }
 
-export function cardFilterUpcoming(events, upComingDate) {
+export function cardUpcoming(events, upComingDate) {
   let upComingEvents = [];
   for (let event of events) {
     if (upComingDate <event.date) {
@@ -133,7 +133,7 @@ export function cardFilterUpcoming(events, upComingDate) {
 }
 
 
-export function maxAttendance(events) {
+export function attendanceMax(events) {
   let highest = 0
   let highestEvent
   for (let event of events) {
@@ -146,7 +146,7 @@ export function maxAttendance(events) {
   return highestEvent
 }
 
-export function lowAttendance(events) {
+export function attendanceLow(events) {
   let lowest = 0
   let lowestEvent
   for (let event of events) {
@@ -159,7 +159,7 @@ export function lowAttendance(events) {
   return lowestEvent;
 }
 
-export function maxCapacity(events) {
+export function capacityMax(events) {
   let larger = 0;
   let largerCapacityEvent;
   for (let event of events) {

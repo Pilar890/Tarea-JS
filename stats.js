@@ -1,9 +1,9 @@
 import {
-  cardFilterUpcoming,
-  cardsFilterPast,
-  maxAttendance,
-  lowAttendance,
-  maxCapacity,
+  cardUpcoming,
+  cardsPast,
+  attendanceMax,
+  attendanceLow,
+  capacityMax,
   upcomingEventsStatistics,
   pastEventsStatistics,
 } from "./module/function.js";
@@ -13,11 +13,11 @@ const table = document.getElementById("table");
 fetch("https://mindhub-xj03.onrender.com/api/amazing")
   .then((res) => res.json())
   .then((data) => {
-    const upcomingEvents = cardFilterUpcoming(data.events, data.currentDate);
-    const pastEvents = cardsFilterPast(data.events, data.currentDate);
-    const maxPercentage = maxAttendance(pastEvents);
-    const lowPercentage = lowAttendance(pastEvents);
-    const maxCap = maxCapacity(data.events);
+    const upcomingEvents = cardUpcoming(data.events, data.currentDate);
+    const pastEvents = cardsPast(data.events, data.currentDate);
+    const maxPercentage = attendanceMax(pastEvents);
+    const lowPercentage = attendanceLow(pastEvents);
+    const maxCap = capacityMax(data.events);
     const upcomingStatistics = upcomingEventsStatistics(upcomingEvents);
     const pastStatistics = pastEventsStatistics(pastEvents);
 
